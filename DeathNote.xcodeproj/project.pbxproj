@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		793C46FA2B17F0AC00993BC4 /* DeathNote.docc in Sources */ = {isa = PBXBuildFile; fileRef = 793C46F92B17F0AC00993BC4 /* DeathNote.docc */; };
 		793C46FB2B17F0AC00993BC4 /* DeathNote.h in Headers */ = {isa = PBXBuildFile; fileRef = 793C46F82B17F0AC00993BC4 /* DeathNote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79A7A5502B1E69530009CED7 /* DLTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A7A54F2B1E69530009CED7 /* DLTextFieldStyle.swift */; };
+		79C6DB812B1FBD890011C966 /* DLValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6DB802B1FBD890011C966 /* DLValidationRule.swift */; };
+		79C6DB832B1FC1110011C966 /* DLValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6DB822B1FC1110011C966 /* DLValidationService.swift */; };
+		79C6DB852B1FC5DA0011C966 /* DLVisualFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6DB842B1FC5DA0011C966 /* DLVisualFeedback.swift */; };
+		79D05D212B1B6CAF000C2D1D /* DLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D05D202B1B6CAF000C2D1D /* DLTextField.swift */; };
+		79D05D282B1CA443000C2D1D /* DLTextField+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D05D272B1CA443000C2D1D /* DLTextField+Modifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		793C46F52B17F0AC00993BC4 /* DeathNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeathNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		793C46F82B17F0AC00993BC4 /* DeathNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeathNote.h; sourceTree = "<group>"; };
 		793C46F92B17F0AC00993BC4 /* DeathNote.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DeathNote.docc; sourceTree = "<group>"; };
+		79A7A54F2B1E69530009CED7 /* DLTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLTextFieldStyle.swift; sourceTree = "<group>"; };
+		79C6DB802B1FBD890011C966 /* DLValidationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLValidationRule.swift; sourceTree = "<group>"; };
+		79C6DB822B1FC1110011C966 /* DLValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLValidationService.swift; sourceTree = "<group>"; };
+		79C6DB842B1FC5DA0011C966 /* DLVisualFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLVisualFeedback.swift; sourceTree = "<group>"; };
+		79D05D202B1B6CAF000C2D1D /* DLTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLTextField.swift; sourceTree = "<group>"; };
+		79D05D272B1CA443000C2D1D /* DLTextField+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DLTextField+Modifiers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,12 @@
 			children = (
 				793C46F82B17F0AC00993BC4 /* DeathNote.h */,
 				793C46F92B17F0AC00993BC4 /* DeathNote.docc */,
+				79D05D202B1B6CAF000C2D1D /* DLTextField.swift */,
+				79D05D272B1CA443000C2D1D /* DLTextField+Modifiers.swift */,
+				79A7A54F2B1E69530009CED7 /* DLTextFieldStyle.swift */,
+				79C6DB802B1FBD890011C966 /* DLValidationRule.swift */,
+				79C6DB822B1FC1110011C966 /* DLValidationService.swift */,
+				79C6DB842B1FC5DA0011C966 /* DLVisualFeedback.swift */,
 			);
 			path = DeathNote;
 			sourceTree = "<group>";
@@ -132,7 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C6DB832B1FC1110011C966 /* DLValidationService.swift in Sources */,
 				793C46FA2B17F0AC00993BC4 /* DeathNote.docc in Sources */,
+				79C6DB852B1FC5DA0011C966 /* DLVisualFeedback.swift in Sources */,
+				79D05D212B1B6CAF000C2D1D /* DLTextField.swift in Sources */,
+				79C6DB812B1FBD890011C966 /* DLValidationRule.swift in Sources */,
+				79D05D282B1CA443000C2D1D /* DLTextField+Modifiers.swift in Sources */,
+				79A7A5502B1E69530009CED7 /* DLTextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
