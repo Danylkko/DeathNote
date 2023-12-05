@@ -61,6 +61,14 @@
 			children = (
 				793C46F82B17F0AC00993BC4 /* DeathNote.h */,
 				793C46F92B17F0AC00993BC4 /* DeathNote.docc */,
+				79C6DB862B1FCA0A0011C966 /* DLTextField */,
+			);
+			path = DeathNote;
+			sourceTree = "<group>";
+		};
+		79C6DB862B1FCA0A0011C966 /* DLTextField */ = {
+			isa = PBXGroup;
+			children = (
 				79D05D202B1B6CAF000C2D1D /* DLTextField.swift */,
 				79D05D272B1CA443000C2D1D /* DLTextField+Modifiers.swift */,
 				79A7A54F2B1E69530009CED7 /* DLTextFieldStyle.swift */,
@@ -68,7 +76,7 @@
 				79C6DB822B1FC1110011C966 /* DLValidationService.swift */,
 				79C6DB842B1FC5DA0011C966 /* DLVisualFeedback.swift */,
 			);
-			path = DeathNote;
+			path = DLTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
