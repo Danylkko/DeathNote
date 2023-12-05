@@ -76,9 +76,9 @@ extension DLTextField: UIViewRepresentable {
         )
         validationHandler?(isValid)
         switch (isValid, visualFeedbackType) {
-        case (true, .none):
+        case (true, .stroke):
             stroke(view: textField, color: .green)
-        case (false, .none):
+        case (false, .stroke):
             stroke(view: textField, color: .red)
         case (false, .shake):
             shake(view: textField)
@@ -154,7 +154,7 @@ extension DLTextField {
         animation.duration = 1.0
         
         CATransaction.setCompletionBlock {
-            print("Animation completed")
+            layer.removeFromSuperlayer()
         }
         
         layer.add(animation, forKey: "validation_stroke")
