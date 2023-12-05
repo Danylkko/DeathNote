@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Type that represents type of visual feedback.
 public enum DLVisualFeedback {
     case none
     case stroke

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Type that represents validation rule of `DLTextField`.
 public enum DLValidationRule {
     case none
     case ukrainePhoneNumber
@@ -15,6 +16,8 @@ public enum DLValidationRule {
     case name
     case cardNumber
     
+    /// Value that represents regex pattern of type.
+    /// - returns `nil` for type `none`.
     var pattern: String? {
         switch self {
         case .ukrainePhoneNumber:

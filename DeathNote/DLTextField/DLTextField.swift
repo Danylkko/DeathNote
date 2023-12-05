@@ -9,17 +9,35 @@ import SwiftUI
 
 public typealias ValidationHandler = (_ isValid: Bool) -> ()
 
+/// A control that displays an editable text interface.
 public struct DLTextField {
     
+    /// Property that represents placeholder value as mutable attributed string
     var placeholder: NSMutableAttributedString
+    
+    /// Property that represents `DLTextField` style (same as `UITextField.BorderStyle`).
     var style: DLTextFieldStyle = .none
+    
+    /// Property that represents validation rule of control. `DLValidationRule.none` by default.
     var validationRule: DLValidationRule = .none
+    
+    /// Property that represents validation handler of control.
     var validationHandler: ValidationHandler?
+    
+    /// Property that represents type of visual feedback. `DLVisualFeedback.none` by default.
     var visualFeedbackType: DLVisualFeedback = .none
     
+    /// Property that represents text value of control.
     @Binding var text: String
+    
+    /// Property that represents whether control has to be validated
+    /// automatically, or triggered manually.
     @Binding var shouldValidate: Bool
     
+    /// Constructor
+    /// - parameter placeholder: control placeholder. Default value is empty string.
+    /// - parameter text: text of control.
+    /// - parameter shouldValidate: that represents whether control has to be validated automatically, or triggered manually.
     public init(
         placeholder: String = "",
         text: Binding<String>,
@@ -30,6 +48,7 @@ public struct DLTextField {
         self._shouldValidate = shouldValidate
     }
     
+    /// Coordinator of a `UIViewRepresentable control.`
     public class Coordinator: NSObject, UITextFieldDelegate {
         
         let dlTextField: DLTextField
@@ -66,8 +85,11 @@ public struct DLTextField {
     
 }
 
+//MARK: - DLTextField + UIViewRepresentable
 extension DLTextField: UIViewRepresentable {
     
+    /// Function that performs internal validation and provides feedback if one was chosen.
+    /// - parameter textField: textField for visual feedback to be performed on.
     private func internalValidate(textField: UITextField) {
         let text = textField.text ?? ""
         let isValid = DLValidationService.shared.validate(
@@ -124,6 +146,9 @@ extension DLTextField: UIViewRepresentable {
 
 extension DLTextField {
     
+    /// Animates stroke effect on passed view.
+    /// - parameter view: View whose stroke will be animated.
+    /// - parameter color: Color of animated stroke.
     func stroke(view: UIView, color: UIColor) {
         CATransaction.begin()
         
@@ -162,6 +187,10 @@ extension DLTextField {
         view.layer.addSublayer(layer)
     }
     
+    /// Performs shake affect on passed view.
+    /// - parameter view: View that will be shaked.
+    /// - parameter for: Duration of shaking. Default value is 0.35.
+    /// - parameter withTranslation: Translation of X-axis. Default value is 8.
     func shake(
         view: UIView,
         for duration: TimeInterval = 0.35,

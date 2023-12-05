@@ -7,12 +7,14 @@
 
 import UIKit
 
+/// Type that represents style of `DLTextField`.
 public enum DLTextFieldStyle {
     case none
     case line
     case bezel
     case roundedRect
     
+    /// Returns `UITextField.BorderStyle` associated value.
     var uiStyle: UITextField.BorderStyle {
         switch self {
         case .none:
