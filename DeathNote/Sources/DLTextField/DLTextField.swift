@@ -130,7 +130,7 @@ extension DLTextField: UIViewRepresentable {
                 rule: validationRule
             )
             validationHandler?(isValid)
-            shouldValidate = false
+//            shouldValidate = false
         }
     }
     
