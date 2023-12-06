@@ -61,7 +61,7 @@
 			children = (
 				793C46F82B17F0AC00993BC4 /* DeathNote.h */,
 				793C46F92B17F0AC00993BC4 /* DeathNote.docc */,
-				79C6DB862B1FCA0A0011C966 /* DLTextField */,
+				79FCDF502B1FFF97007A74BB /* Sources */,
 			);
 			path = DeathNote;
 			sourceTree = "<group>";
@@ -77,6 +77,14 @@
 				79C6DB842B1FC5DA0011C966 /* DLVisualFeedback.swift */,
 			);
 			path = DLTextField;
+			sourceTree = "<group>";
+		};
+		79FCDF502B1FFF97007A74BB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				79C6DB862B1FCA0A0011C966 /* DLTextField */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
